@@ -16,7 +16,7 @@ const ExploreMenu = () => {
   
     useEffect(() => {
       const fetchShops = () => {
-        fetch("http://localhost:8082/shop/get", {
+        fetch("https://cantino-backend.onrender.com/shop/get", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

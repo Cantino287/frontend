@@ -34,7 +34,7 @@ const FoodDisplay = () => {
   useEffect(() => {
     const fetchCat = () => {
 
-      fetch("http://localhost:8082/category/get", {
+      fetch("https://cantino-backend.onrender.com/category/get", {
         method: "GET",
         credentials: "include",
         headers: {
@@ -70,7 +70,7 @@ const FoodDisplay = () => {
     }
 
     const fetchMenu = () => {
-      fetch(`http://localhost:8082/product/shop/${shopId}`, {
+      fetch(`https://cantino-backend.onrender.com/product/shop/${shopId}`, {
         method: "GET",
         credentials: "include",
         headers: {
@@ -105,7 +105,7 @@ const FoodDisplay = () => {
   useEffect(() => {
     if (shopId) {
       axios
-        .get(`http://localhost:8082/shop/shop-name/${shopId}`)
+        .get(`https://cantino-backend.onrender.com/shop/shop-name/${shopId}`)
         .then((res) => setShopName(res.data))
         .catch((err) => console.error("Error fetching shop name:", err));
     }

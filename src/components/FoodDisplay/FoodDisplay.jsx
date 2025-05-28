@@ -39,6 +39,8 @@ const FoodDisplay = () => {
         credentials: "include",
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin":"*",
+
         },
       })
         .then((response) => {

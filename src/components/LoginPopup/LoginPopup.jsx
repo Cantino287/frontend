@@ -529,7 +529,7 @@ const handleSubmit = async (e) => {
       : { name, contactNumber, email, password };
 
   try {
-    const response = await fetch(`http://localhost:8082${endpoint}`, {
+    const response = await fetch(`https://cantino-backend.onrender.com${endpoint}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
@@ -540,7 +540,7 @@ const handleSubmit = async (e) => {
     if (response.ok) {
       if (currState === "Sign Up") {
         // Auto-login after successful signup
-        const loginResponse = await fetch("http://localhost:8082/user/login", {
+        const loginResponse = await fetch("https://cantino-backend.onrender.com/user/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, password }),
@@ -585,7 +585,7 @@ const handleSubmit = async (e) => {
     const handleForgotPassword = async () => {
         setLoading(true);
         try {
-            const response = await fetch("http://localhost:8082/user/forgotPassword", {
+            const response = await fetch("https://cantino-backend.onrender.com/user/forgotPassword", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email })
@@ -608,7 +608,7 @@ const handleSubmit = async (e) => {
 
     const handleResetPassword = async () => {
         try {
-            const response = await fetch("http://localhost:8082/user/resetPassword", {
+            const response = await fetch("https://cantino-backend.onrender.com/user/resetPassword", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, otp, newPassword })

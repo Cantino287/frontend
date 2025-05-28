@@ -105,7 +105,7 @@ const ExploreMenu = () => {
             >
               <img
                 className={shopId === shop.id ? "active" : ""}
-                src={`http://localhost:8082/images/shop-images/${shop.image}`}
+                src={`https://cantino-backend.onrender.com/images/shop-images/${shop.image}`}
                 onError={(e) => {
                   e.target.src = "/fallback-image.jpg";
                 }}

@@ -1,0 +1,126 @@
+/* General Layout and Grid */
+.order-management {
+    margin: 1rem;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-item h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .stat-item p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .stat-total {
+    background-color: #e0f7fa;
+    color: #00796b;
+  }
+  
+  .stat-pending {
+    background-color: #fff9c4;
+    color: #fbc02d;
+  }
+  
+  .stat-completed {
+    background-color: #c8e6c9;
+    color: #388e3c;
+  }
+  
+  .stat-canceled {
+    background-color: #ffcdd2;
+    color: #d32f2f;
+  }
+  
+  /* Order List Layout */
+  .order-list {
+    margin-top: 2rem;
+  }
+  
+  .order-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .order-status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 120px;
+  }
+
+  .order-actions{
+    text-align: right;
+  }
+  
+  .order-status.pending {
+    background-color: #ffeb3b;
+  }
+  
+  .order-status.completed {
+    background-color: #4caf50;
+  }
+  
+  .order-status.canceled {
+    background-color: #f44336;
+  }
+  
+  /* Order Action Buttons */
+  .order-actions button {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .order-actions button:hover {
+    opacity: 0.9;
+  }
+  
+  .order-actions button:nth-child(1) {
+    background-color: #4caf50; /* Complete */
+  }
+  
+  .order-actions button:nth-child(2) {
+    background-color: #f44336; /* Cancel */
+  }
+  
+  /* Completion Bar */
+  .completion-bar {
+    margin-top: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .completion {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+  

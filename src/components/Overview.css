@@ -1,0 +1,116 @@
+/* Overview.css */
+
+.overview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .overview-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+  }
+  
+  .profile-icon .profile-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overview-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .overview-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .stat-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .stat-card p {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .blue { background: linear-gradient(to bottom right, #ebf8ff, #bee3f8); color: #2b6cb0; }
+  .green { background: linear-gradient(to bottom right, #f0fff4, #c6f6d5); color: #2f855a; }
+  .red { background: linear-gradient(to bottom right, #fff5f5, #fed7d7); color: #c53030; }
+  
+  .overview-grids {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .grid-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .grid-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .grid-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+  
+  .sales-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2b6cb0;
+  }
+  
+  .sales-comparison {
+    font-size: 0.875rem;
+    color: #4a5568;
+  }
+  
+  .sales-detail {
+    font-size: 0.75rem;
+    color: #718096;
+  }
+  
+  .positive { color: #2f855a; }
+  
+  .sales-figure {
+    font-weight: bold;
+    color: #2b6cb0;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

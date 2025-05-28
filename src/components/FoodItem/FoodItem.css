@@ -1,0 +1,113 @@
+.food-item{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    /* padding: 50px; */
+    /* box-shadow: 0px 0px 10px #000000; */
+    transition: 0.3s;
+    
+    animation: fadeIn 1s;
+}
+.food-item-image{
+    /* width: 100%; */
+  /* height: 250px;  */
+  object-fit: fill;
+  align-items: center;
+  max-width: 275px;
+  /* height: auto; */
+  max-height: 225;
+
+  /* margin-bottom: 55px; */
+  
+}
+.food-item-info{
+    padding: 20px;
+}
+.food-item-name-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align-last: center;
+}
+.food-item-name-rating p{
+    font-size: 22px;
+  font-weight: 500;
+  color: red;
+  font-family: "Inter", sans-serif;
+  font-weight: 30px;
+  margin-bottom: 5px;
+  text-align-last: center;
+  margin-top: 5px;
+}
+.food-item-name-rating img{
+    width: 70px;
+}
+.food-item-desc{
+    color: #676767;
+    font-size: 18px;
+    justify-content: center;
+    text-align-last: center;
+
+
+}
+.food-item-price{
+    color: tomato;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0px;
+    justify-content: center;
+    text-align-last: center;
+
+
+}
+.food-item-img-container{
+     display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  position: relative;      /* keep overlay positioned correctly */
+  height: 225px;           /* or your desired fixed height */
+  /* overflow: hidden; */
+}
+.food-item-img-container .add{
+    width: 35px;
+    position: absolute;
+    bottom:-5px;
+    /* margi: left; */
+    right: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.food-item-counter{
+    position: absolute;
+    bottom: -5px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+.food-item-counter img{
+    width: 30px;
+}
+
+
+.unavailable-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(182, 177, 177,0.6);
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  z-index: 5;
+}

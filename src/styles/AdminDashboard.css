@@ -1,0 +1,57 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .nav-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .nav-button.active {
+    background: #555;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .stat-card {
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .blue { background: #cce5ff; }
+  .red { background: #f8d7da; }
+  .green { background: #d4edda; }
+  
+  .table-card {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reserved { background: #f8d7da; }
+  .available { background: #d4edda; }
+  
+  .progress-bar {
+    height: 20px;
+    background: blue;
+    color: white;
+    text-align: center;
+  }
+  

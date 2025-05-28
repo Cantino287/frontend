@@ -1,0 +1,149 @@
+.place-order{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.place-order-left input,select{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+.place-order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+.place-order-right {
+    width: 100%;
+    max-width: max(40%,500px);
+}
+/* .place-order-right .cart-total-details span{
+    float: right;
+    margin-left: -190px;
+  
+} */
+.cart-total-details {
+    display: flex;
+    flex-direction: column;
+  
+    /* ------------------------- */
+    align-items: center; /* Center all rows horizontally */
+    width: 100%;
+}
+
+.cart-total h2{
+    font-size: larger;
+    font-weight: 600;
+}
+/* .cart-item-details {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px 0;
+} */
+
+
+.cart-item-details {
+    display: flex;
+    justify-content: space-between; /* Distribute spans: left, center, right */
+    width: 100%;
+    max-width: 100%; /* Set a fixed or max width to control layout */
+    padding: 10px 20px;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+
+/* ------------------------------ */
+.cart-item-details span {
+    font-size: 18px;
+    margin: 4px 0; 
+    /* font-weight: 500; */
+    flex: 1;              /* Allow spans to share space */
+    text-align: center;   /* Default center text */
+}
+
+.cart-item-details span:first-child {
+    text-align: left;
+}
+
+.cart-item-details span:nth-child(2) {
+    text-align: center;
+}
+
+.cart-item-details span:last-child {
+    text-align: right;
+}
+/* ----------------------------------- */
+.place-order .cart-total button{
+    margin-top: 30px;
+}
+
+
+
+.place-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+/* ✅ Responsive Layout for Mobile */
+@media (max-width: 600px) {
+    .place-order {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        gap: 30px;
+    }
+
+    .place-order-left, 
+    .place-order-right {
+        width: 90%; /* Use more screen space on small devices */
+        max-width: 100%;
+    }
+
+    .place-order-left .title {
+        font-size: 24px; /* Reduce title size */
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .place-order-left input, 
+    .place-order-left select {
+        width: 100%;
+        padding: 12px; /* Increase tap area */
+        font-size: 16px;
+    }
+
+    .place-order-left .multi-fields {
+        flex-direction: column; /* Stack inputs vertically */
+        gap: 10px;
+    }
+
+    .place-order-right .cart-total-details span {
+        float: none; /* Prevent text alignment issues */
+        display: block;
+        text-align: right;
+        margin-left: 0;
+    }
+
+    .place-order .cart-total button {
+        width: 100%; /* Make button full width */
+        padding: 12px;
+        font-size: 18px;
+    }
+}

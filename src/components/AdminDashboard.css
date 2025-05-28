@@ -1,0 +1,77 @@
+/* AdminDashboard.css */
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  .sidebar {
+    width: 16rem;
+    background-color: #1f2937;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .dashboard-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+  }
+  
+  .nav-button:hover {
+    background-color: #374151;
+  }
+  
+  .nav-button.active {
+    background-color: #374151;
+  }
+  
+  .logout-button-container {
+    position: fixed;
+    bottom: 3rem;
+    left: 3.9rem;
+    width: 10%;
+  }
+  
+  .logout-button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #ef4444;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+  }
+  
+  .logout-button:hover {
+    background-color: #dc2626;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+  }
+  

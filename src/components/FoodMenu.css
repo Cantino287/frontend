@@ -1,0 +1,79 @@
+/* FoodMenu.css */
+.food-menu {
+    padding: 24px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .menu-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .menu-table th,
+  .menu-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .menu-table th {
+    background-color: #f3f4f6;
+  }
+  .menu-table td.action-buttons {
+    text-align: center;
+  }
+  
+  .menu-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .action-buttons {
+    text-align: center;
+  }
+  
+  .edit-button {
+    padding: 6px 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .edit-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .delete-button {
+    padding: 6px 12px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

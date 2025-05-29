@@ -22,7 +22,7 @@ const Cart = () => {
     useEffect(() => {
         const shopId = localStorage.getItem("shopId");
         if (shopId) {
-          fetch(`http://localhost:8082/shop/shop-name/${shopId}`)
+          fetch(`https://cantino.onrender.com/shop/shop-name/${shopId}`)
             .then((res) => {
               if (!res.ok) throw new Error("Failed to fetch shop name");
               return res.text();
@@ -60,7 +60,7 @@ const Cart = () => {
         const shopId = localStorage.getItem('shopId'); // get shopId from localStorage
         const fetchShop = async () => {
             try {
-                const response = await axios.get(`http://localhost:8082/shop/get/${shopId}`);
+                const response = await axios.get(`https://cantino.onrender.com/shop/get/${shopId}`);
                 setShop(response.data);
                 setShopPhone(response.data.phone);
                 console.log('Set shopPhone:', response.data.phone);
@@ -140,7 +140,7 @@ const Cart = () => {
                         )}
 <td>
   <img
-    src={`http://localhost:8082/images/product-images/${item.image}`}
+    src={`https://cantino.onrender.com/images/product-images/${item.image}`}
     alt={item.name}
     className="cart-item-image"
   />

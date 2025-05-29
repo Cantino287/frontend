@@ -30,7 +30,7 @@ export const StoreProvider = (props) => {
     useEffect(() => {
         if (!shopId) return;
     
-        fetch(`http://localhost:8082/product/shop/${shopId}`, {
+        fetch(`https://cantino.onrender.com/product/shop/${shopId}`, {
           method: "GET",
           credentials: "include",
           headers: {
@@ -52,7 +52,7 @@ export const StoreProvider = (props) => {
       useEffect(() => {
         const shopId = localStorage.getItem("shopId");
         if (shopId) {
-          fetch(`http://localhost:8082/shop/shop-name/${shopId}`)
+          fetch(`https://cantino.onrender.com/shop/shop-name/${shopId}`)
             .then((res) => res.json())
             .then((data) => setShopName(data))
             .catch((err) => console.error("❌ Error fetching shop name:", err));
@@ -192,7 +192,7 @@ export const StoreProvider = (props) => {
           return;
         }
       
-        fetch(`http://localhost:8082/product/shop/${shopId}`, {
+        fetch(`https://cantino.onrender.com/product/shop/${shopId}`, {
           method: "GET",
           credentials: "include", // ✅ includes cookies/session
           headers: {

@@ -16,7 +16,7 @@ const ExploreMenu = () => {
   
     useEffect(() => {
       const fetchShops = () => {
-        fetch("https://cantino.onrender.com//shop/get", {
+        fetch("https://cantino.onrender.com/shop/get", {
           method: "GET",
           mode: 'cors',
           headers: {
@@ -107,7 +107,7 @@ const ExploreMenu = () => {
             >
               <img
                 className={shopId === shop.id ? "active" : ""}
-                src={`https://cantino.onrender.com//images/shop-images/${shop.image}`}
+                src={`https://cantino.onrender.com/images/shop-images/${shop.image}`}
                 onError={(e) => {
                   e.target.src = "/fallback-image.jpg";
                 }}

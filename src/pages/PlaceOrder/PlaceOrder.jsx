@@ -326,7 +326,7 @@ const PlaceOrder = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:8082/delivery/placeOrder', {
+      const response = await fetch('https://cantino.onrender.com/delivery/placeOrder', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

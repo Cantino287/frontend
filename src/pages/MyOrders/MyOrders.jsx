@@ -107,7 +107,7 @@ const MyOrders = () => {
 
     try {
       console.log(`Fetching orders for: ${userEmail}`);
-      const response = await axios.get(`http://localhost:8082/delivery/getByEmail`, {
+      const response = await axios.get(`https://cantino.onrender.com/delivery/getByEmail`, {
         params: { email: userEmail },
       });
       console.log("✅ Orders fetched:", response.data);

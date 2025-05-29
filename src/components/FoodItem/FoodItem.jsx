@@ -60,7 +60,7 @@ const FoodItem = ({ product }) => {
 
   };
   const imageUrl = image
-    ? `http://localhost:8082/images/product-images/${image}`
+    ? `https://cantino.onrender.com/images/product-images/${image}`
     : "/default-image.jpg";
 
   const isAvailable = status === 'Available';
